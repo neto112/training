@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="topo">
+        <span>Calculadora de IMC</span>
+      </div>
+
+      <div class="conteudo">
+        <span class="titulo-input">Digite o seu nome:</span>
+        <input id="name" placeholder="Seu nome" />
+
+        <span class="titulo-input">Selecione o seu peso em kg:</span>
+        <input id="weight" type="range" min="0" max="999" />
+        <div id="weightValue"></div>
+
+        <span class="titulo-input">Selecione a sua altura em cm:</span>
+        <input id="height" type="range" min="0" max="300" />
+        <div id="heightValue"></div>
+
+        <button id="btn-calcular" type="button">
+          Calcular
+        </button>
+      </div>
+
+      <div id="result"></div>
+      <div id="imcNumero"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
